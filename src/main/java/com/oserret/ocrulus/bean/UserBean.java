@@ -13,6 +13,7 @@ public class UserBean {
     private Date startDate;
     private Date endDate;
 
+    private boolean showPassword;
 
 
     private boolean sendEmail;
@@ -85,5 +86,13 @@ public class UserBean {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    public boolean isShowPassword() {
+        return showPassword;
+    }
+
+    public void setShowPassword(boolean showPassword) {
+        this.showPassword = showPassword;
     }
 }

@@ -53,7 +53,7 @@ public class UserController {
     private String pwd;
     @Value("${mail.SmtpSslProtocols}")
     private String smtpSslProtocols;
-    @Value("${expert.ai.ic.uri}")
+    @Value("${ocrulus.ocr.uri}")
     private String internalConverterUri;
 
     /**
@@ -115,6 +115,9 @@ public class UserController {
 
         logger.info("Response: /api/user/addUser POST SERVICE");
         if (createdUser != null) {
+            if(userBean.isShowPassword()){
+                createdUser.setPassword(generatedPwd);
+            }
             return createdUser;
         } else {
             return Utilities.toJson(new Message(Globals.USER_ALREADY_PRESENT, Globals.STATUS_KO));
