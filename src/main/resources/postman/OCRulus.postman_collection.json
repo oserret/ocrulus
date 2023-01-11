@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "1d3f65f7-7c22-40a5-98a9-d8075eb13201",
+		"name": "OCRulus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Management",
+			"item": [
+				{
+					"name": "AllUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/user/all",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User (params)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/user/add?firstName=Pepito&lastName=Grillo&email=pepitoGrillo@gmail.com&userName=pgrillo411&password=12345",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"user",
+								"add"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Pepito"
+								},
+								{
+									"key": "lastName",
+									"value": "Grillo"
+								},
+								{
+									"key": "email",
+									"value": "pepitoGrillo@gmail.com"
+								},
+								{
+									"key": "userName",
+									"value": "pgrillo411"
+								},
+								{
+									"key": "password",
+									"value": "12345"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"David\",\r\n    \"lastName\": \"Sol\",\r\n    \"email\": \"dsol@gmail.com\",\r\n    \"userName\": \"dsol8111\",\r\n    \"password\": \"pwd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/user/addUser",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"user",
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login (no token)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"dsol81\",\r\n    \"password\": \"pwd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/user/login",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Conversion Request Management",
+			"item": [
+				{
+					"name": "Add Conversion Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fileName\": \"prova2.pdf\",\r\n    \"userName\": \"dsol3\",\r\n    \"conversionEngine\": \"ABBYYY\",\r\n    \"processed\": false,\r\n    \"emailTo\" : \"oserret@expert.ai\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/conversion/addConversionRequest",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"conversion",
+								"addConversionRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Conversion Requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/conversion/all",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"conversion",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Not Processed Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/conversion/getNotProcessedRequest",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"conversion",
+								"getNotProcessedRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Not Processed Request by Status",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Conversion Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/conversion/updateConversionRequest",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"conversion",
+								"updateConversionRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Engine Configuration",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update converter parameters",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "File Management",
+			"item": [
+				{
+					"name": "Upload File",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/oserret/Downloads/folder.zip"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/files/upload",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"files",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login (token)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"dsol81\",\r\n    \"password\": \"pwd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"dsol8111\",\r\n    \"password\":\"pwd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/auth/authenticate",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "demo",
+			"item": [
+				{
+					"name": "Hello world",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{api-ocrulus}}/hello",
+							"host": [
+								"{{host}}{{api-ocrulus}}"
+							],
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvc2VycmV0IiwiZXhwIjoxNjUxNjA3MTM1LCJpYXQiOjE2NTE1ODkxMzV9.khAdYC8lG85HS634QL9rhMQkLfmW9Ba76eX4setWZv0h37LJKqjIuSRiGWQ5gkS9rPM5aHN7qy-xOQCk4uNzUA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,63 @@
+2022-09-20 10:30:45,679 INFO org.springframework.boot.StartupInfoLogger [main] Starting OcrulusApplication using Java 1.8.0_202 on OSERRET-NBK with PID 7512 (C:\Projects\OCRULUS\ocrulus-converter\target\classes started by oserret in C:\Projects\OCRULUS\ocrulus-converter)
+2022-09-20 10:30:45,683 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-20 10:30:49,253 INFO org.springframework.boot.StartupInfoLogger [main] Started OcrulusApplication in 4.058 seconds (JVM running for 4.97)
+2022-09-20 10:31:03,664 WARN com.expert.ai.ocrulus.config.JwtRequestFilter [http-nio-8082-exec-1] JWT Token does not begin with Bearer String
+2022-09-20 10:31:03,731 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Call: /api/auth/authenticate POST SERVICE
+2022-09-20 10:31:03,732 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Authenticating the user and the password
+2022-09-20 10:31:03,982 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Loading user
+2022-09-20 10:31:03,984 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Validating the password provided against the database password
+2022-09-20 10:31:04,063 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Generating token with the user information
+2022-09-20 10:31:04,275 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Generating the user session
+2022-09-20 10:31:04,289 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Storing the user session
+2022-09-20 10:31:04,333 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-1] Response: /api/auth/authenticate POST SERVICE
+2022-09-20 10:31:19,112 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-4] Call: /api/conversion/getNotProcessedRequestStatus SERVICE
+2022-09-20 10:31:35,121 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-3] Call: /api/conversion/updateConversionRequest SERVICE POST
+2022-09-20 10:31:35,141 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-3] RETURN: /api/conversion/addConversionRequest SERVICE POST
+2022-09-20 10:43:08,398 WARN com.expert.ai.ocrulus.config.JwtRequestFilter [http-nio-8082-exec-6] JWT Token does not begin with Bearer String
+2022-09-20 10:43:08,399 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Call: /api/auth/authenticate POST SERVICE
+2022-09-20 10:43:08,400 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Authenticating the user and the password
+2022-09-20 10:43:08,482 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Loading user
+2022-09-20 10:43:08,484 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Validating the password provided against the database password
+2022-09-20 10:43:08,564 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Generating token with the user information
+2022-09-20 10:43:08,565 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Generating the user session
+2022-09-20 10:43:08,567 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Storing the user session
+2022-09-20 10:43:08,584 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-6] Response: /api/auth/authenticate POST SERVICE
+2022-09-20 10:43:11,558 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-5] Call: /api/conversion/getNotProcessedRequestStatus SERVICE
+2022-09-20 10:43:12,547 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-7] Call: /api/conversion/updateConversionRequest SERVICE POST
+2022-09-20 10:43:12,559 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-7] RETURN: /api/conversion/addConversionRequest SERVICE POST
+2022-09-20 10:45:12,492 WARN com.expert.ai.ocrulus.config.JwtRequestFilter [http-nio-8082-exec-9] JWT Token does not begin with Bearer String
+2022-09-20 10:45:12,494 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Call: /api/auth/authenticate POST SERVICE
+2022-09-20 10:45:12,495 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Authenticating the user and the password
+2022-09-20 10:45:12,593 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Loading user
+2022-09-20 10:45:12,596 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Validating the password provided against the database password
+2022-09-20 10:45:12,686 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Generating token with the user information
+2022-09-20 10:45:12,687 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Generating the user session
+2022-09-20 10:45:12,690 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Storing the user session
+2022-09-20 10:45:12,703 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-9] Response: /api/auth/authenticate POST SERVICE
+2022-09-20 10:45:12,720 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-10] Call: /api/conversion/getNotProcessedRequestStatus SERVICE
+2022-09-20 10:45:12,745 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-1] Call: /api/conversion/updateConversionRequest SERVICE POST
+2022-09-20 10:45:12,753 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-1] RETURN: /api/conversion/addConversionRequest SERVICE POST
+2022-09-20 10:56:17,670 WARN com.expert.ai.ocrulus.config.JwtRequestFilter [http-nio-8082-exec-3] JWT Token does not begin with Bearer String
+2022-09-20 10:56:17,672 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Call: /api/auth/authenticate POST SERVICE
+2022-09-20 10:56:17,673 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Authenticating the user and the password
+2022-09-20 10:56:17,759 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Loading user
+2022-09-20 10:56:17,761 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Validating the password provided against the database password
+2022-09-20 10:56:17,846 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Generating token with the user information
+2022-09-20 10:56:17,847 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Generating the user session
+2022-09-20 10:56:17,850 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Storing the user session
+2022-09-20 10:56:17,868 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-3] Response: /api/auth/authenticate POST SERVICE
+2022-09-20 10:56:17,881 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-2] Call: /api/conversion/getNotProcessedRequestStatus SERVICE
+2022-09-20 10:56:17,900 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-6] Call: /api/conversion/updateConversionRequest SERVICE POST
+2022-09-20 10:56:17,908 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-6] RETURN: /api/conversion/addConversionRequest SERVICE POST
+2022-09-20 10:56:57,194 WARN com.expert.ai.ocrulus.config.JwtRequestFilter [http-nio-8082-exec-7] JWT Token does not begin with Bearer String
+2022-09-20 10:56:57,195 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Call: /api/auth/authenticate POST SERVICE
+2022-09-20 10:56:57,196 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Authenticating the user and the password
+2022-09-20 10:56:57,277 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Loading user
+2022-09-20 10:56:57,278 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Validating the password provided against the database password
+2022-09-20 10:56:57,359 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Generating token with the user information
+2022-09-20 10:56:57,360 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Generating the user session
+2022-09-20 10:56:57,362 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Storing the user session
+2022-09-20 10:56:57,381 INFO com.expert.ai.ocrulus.controller.JwtAuthenticationController [http-nio-8082-exec-7] Response: /api/auth/authenticate POST SERVICE
+2022-09-20 10:56:57,394 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-8] Call: /api/conversion/getNotProcessedRequestStatus SERVICE
+2022-09-20 10:56:57,416 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-9] Call: /api/conversion/updateConversionRequest SERVICE POST
+2022-09-20 10:56:57,426 INFO com.expert.ai.ocrulus.controller.ConversionRequestController [http-nio-8082-exec-9] RETURN: /api/conversion/addConversionRequest SERVICE POST
